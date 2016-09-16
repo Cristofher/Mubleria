@@ -1,4 +1,10 @@
 # Muebleria
 Sistema para muebleria
 
-KumbiaPHP
+#Login
+El sistema para muebleria debe contar con login
+
+#Otros
+- Presupuesto
+- Orden de cheques
+- 
