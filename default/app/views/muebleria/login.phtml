@@ -2,38 +2,33 @@
     <div>
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
-
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form>
-              <h1>Ingreso</h1>
-              <div>
-                <input type="text" class="form-control" placeholder="Usuario" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Clave" required="" />
-              </div>
-              <div>
-                <a class="btn btn-default submit" href=<?php echo PUBLIC_PATH ?>muebleria/home >Entrar</a>
-              </div>
+            <?php echo Form::open("muebleria/login"); ?>
+            <h1>Ingreso</h1>
+            <div>
+              <?php echo Form::text("login",'class="form-control" placeholder="Usuario" required=""'); ?>
+            </div>              
+            <div>
+              <?php echo Form::pass("password",'class="form-control" placeholder="Clave" required=""'); ?>
+            </div>
+            <div>
+            <?php echo Form::submit("Ingresar",'class="btn btn-default submit"'); ?>
+           </div>
+           <div class="clearfix"></div>
+           <div class="separator">
+            <div class="clearfix"></div>
+            <br />
 
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                
-
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-                  <h1><i class="fa fa-paw"></i> Muebleria HR!</h1>
-                  <p>©2016 All Rights Reserved. Privacy and Terms</p>
-                </div>
-              </div>
-            </form>
-          </section>
-        </div>
+            <div>
+              <h1><i class="fa fa-paw"></i> Muebleria HR!</h1>
+              <p>©2016 All Rights Reserved. Privacy and Terms</p>
+            </div>
+          </div>
+          <?php echo Form::close(); ?>
+        </section>
       </div>
     </div>
-  </body>
+  </div>
+</body>
