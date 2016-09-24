@@ -9,7 +9,7 @@ class IndexController extends AppController
 
     public function index()
     {
-        
+        Redirect::to("muebleria/login"); 
     }
 
 }
